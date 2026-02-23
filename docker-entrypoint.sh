@@ -8,10 +8,18 @@ cat > /home/picoclaw/.picoclaw/config.json << EOF
   "agents": {
     "defaults": {
       "workspace": "~/.picoclaw/workspace",
-      "model": "${PICOCLAW_MODEL}",
+      "model": "minimax-m2.5",
       "max_tokens": 8192
     }
   },
+  "model_list": [
+    {
+      "model_name": "minimax-m2.5",
+        "model": "openrouter/minimax/minimax-m2.5",
+        "api_key": "${OPENROUTER_API_KEY}",
+        "api_base": "https://openrouter.ai/api/v1"
+    }
+  ],
   "providers": {
     "openrouter": {
       "api_key": "${OPENROUTER_API_KEY}",
