@@ -15,11 +15,9 @@ cat > /home/picoclaw/.picoclaw/config.json << EOF
   "model_list": [
     {
       "model_name": "minimax-m2.5",
-      "litellm_params": {
         "model": "openrouter/minimax/minimax-m2.5",
         "api_key": "${OPENROUTER_API_KEY}",
         "api_base": "https://openrouter.ai/api/v1"
-      }
     }
   ],
   "providers": {
